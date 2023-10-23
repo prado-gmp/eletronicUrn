@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="src/images/icon.png" type="imagex/png">
+    <script defer src="src/script/candidatos.js"></script>
+    <script defer src='src/script/script.js'></script>
+    <title> URNA ELETRÔNICA </title>
+</head>
+<body>
+    <main>
+        <aside id="tela">
+            <section class="d-1">
+                <div class="d-1-left">
+
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+
+                    <div class="d-1-2">
+                        <span>VEREADOR</span>
+                    </div>
+
+                    <div class="d-1-3">
+                        <div  class="numero pisca"></div>
+                        <div  class="numero"></div>
+                    </div>
+
+                    <div class="d-1-4">
+                        NOME: <br>
+                        PARTIDO: <br>
+                        VICE-PREFEITO:
+                    </div>
+                </div>
+
+                <div class="d-1-right">
+                    <figure class="d-1-image">
+                        <img src="/src/images/lula.jpg">
+                        PRESIDENTE
+                    </figure>
+
+                    <figure class="d-1-image small">
+                        <img src="/src/images/alckmin.jpg">
+                        VICE-PRESIDENTE
+                    </figure>
+                </div>
+
+            </section>
+
+            <section class="d-2">
+                Aperte a tela: <br/>
+                CONFIRMA para confirmar este voto <br/>
+                CORRIGE para reniciar este voto
+            </section>
+        </aside>
+
+        <aside id="teclado">
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="press('1')">1</div>
+                <div class="teclado--botao" onclick="press('2')"">2</div>
+                <div class="teclado--botao" onclick="press('3')"">3</div>
+            </div>
+            
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="press('4')">4</div>
+                <div class="teclado--botao" onclick="press('5')">5</div>
+                <div class="teclado--botao" onclick="press('6')">6</div>
+            </div>
+
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="press('7')">7</div>
+                <div class="teclado--botao" onclick="press('8')">8</div>
+                <div class="teclado--botao" onclick="press('9')">9</div>
+            </div>
+
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="press('0')">0</div>
+            </div>
+
+            <div class="teclado--linha">
+                <div class="teclado--botao botao--branco" onclick="white()">BRANCO</div>
+                <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
+                <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMA</div>
+            </div>
+        </aside>
+    </main>
+
+    <div class="infos"> 
+        <b>
+            POSSIBILIDADES <br/>
+        </b>
+        <b>GOVERNADOR:</b> 10; 13 <br/>
+        <b>PRESIDENTE:</b> 22, 13 <br/> <br/>
+        <strong>
+            APERTE F5 PARA VOLTAR AO ÍNICIO
+        </strong>
+    </div>
+</body>
+</html>
